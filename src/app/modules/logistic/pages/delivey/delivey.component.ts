@@ -67,4 +67,9 @@ export class DeliveyComponent implements OnInit {
     this.counter = 1;
     this.dispatch();
   }
+  
+  public modelSelectedChanged(e: string) {
+    this.counter = 1;
+    this.dispatch();
+  }
 }

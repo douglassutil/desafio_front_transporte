@@ -7,7 +7,7 @@
                 <div class="container-filter">
                     <mat-form-field>
                         <mat-label>Tipo de filtro</mat-label>
-                        <mat-select [(ngModel)]="selectedValue" name="food">
+                        <mat-select [(ngModel)]="selectedValue" (ngModelChange)="modelSelectedChanged($event)" name="food">
                             <mat-option>Limpar Filtro</mat-option>
                             <mat-option value="driver">Motorista</mat-option>
                             <mat-option value="status">Status</mat-option>
