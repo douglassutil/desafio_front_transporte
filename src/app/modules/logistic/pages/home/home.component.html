@@ -1,0 +1,52 @@
+<section class="container-home">
+    <h6>Desafio Front-end - Logística com gerenciamento de transporte</h6>
+    <p>Neste desafio você precisa desenvolver uma interface para possibilitar o acompanhamento das entregas de uma transportadora.</p>
+    <p>A aplicação precisa ter boas práticas de implementação, qualidade de código, testes e documentação.</p>
+    <p>É essencial garantir uma experiência de usuário intuitiva e responsiva, além de garantir a integridade e validação dos dados manipulados pela aplicação.</p>
+    <p>A aplicação deverá ser composta por 2 views e um menu com links para elas:</p>
+    <ul>
+        <li>Dashboard</li>
+        <li>Lista de entregas</li>
+    </ul>
+    <p>Os dados serão disponibilizados através de um arquivo .json neste <a href="https://raw.githubusercontent.com/brunochikuji/example/main/entregas.json" target="_blank" >link</a> e você pode utilizar na sua aplicação direto ou usar localmente em uma API simulada (pode ser uma mock API, API fake ou dados em memória no serviço).</p>
+    <p><strong>Requisitos do sistema:</strong></p>
+    <ol>
+        <li>Utilizar o framework Angular, preferencialmente uma das versões mais recentes.</li>
+        <li>Implementar as melhores práticas de desenvolvimento frontend, seguindo padrões como Clean Code, SOLID e DRY. </li>
+        <li>Utilizar TypeScript como linguagem principal de desenvolvimento.</li>
+        <li>Utilizar ferramentas de gerenciamento de estado, como RxJS e/ou NgRx, para lidar com o estado da aplicação. </li>
+        <li>Utilizar Angular Material ou outra biblioteca de UI para criar uma interface de usuário responsiva e moderna. </li>
+        <li>Implementar roteamento para navegação entre páginas da aplicação.</li>
+        <li>Ter um arquivo readme com as instruções para rodar o projeto e testes.</li>
+    </ol>
+    <p><strong>Funcionalidades da aplicação:</strong></p>
+    <ol>
+        <li>O dashboard precisa exibir 3 painéis com as seguintes informações:</li>
+        <ul>
+            <li>Mostrar em uma tabela o andamento de entregas de cada motorista, sendo:</li>
+            <ul>
+                <li>Nome do motorista</li>
+                <li>Quantidade total de entregas que ele saiu para entregar</li>
+                <li>Quantas entregas ele já realizou</li>
+            </ul>
+            <li>Mostrar em uma tabela a quantidade de entregas que tiveram insucesso na entrega por motorista, sendo:
+            </li>
+            <ul>
+                <li>Nome do motorista</li>
+                <li>Quantidade de entregas (Entrega com status de INSUCESSO)</li>
+            </ul>
+            <li>Mostrar em uma tabela o andamento de entregas por bairro, sendo:</li>
+            <ul>
+                <li>Bairro</li>
+                <li>Quantidade total de entregas</li>
+                <li>Quantidade de entregas já realizadas</li>
+            </ul>
+        </ul>
+        <li>A view que lista todas as entregas deverá possuir paginação de 10 em 10 registros e conter 2 filtros:</li>
+        <ul>
+            <li>Por motorista</li>
+            <li>Por status</li>
+        </ul>
+        <li>Ter testes unitários para as funcionalidades e componentes.</li>
+    </ol>
+</section>

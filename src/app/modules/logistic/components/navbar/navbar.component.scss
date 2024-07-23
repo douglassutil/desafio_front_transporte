@@ -1,0 +1,22 @@
+::ng-deep .mat-mdc-menu-panel.mat-menu-custom {
+  background-color: var(--white) !important;
+
+  mat-icon, span {
+    color: var(--primary);
+  }
+}
+
+.mat-toolbar {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1000;
+
+  justify-content: space-between;
+  background-color: var(--primary);
+  color: var(--white);
+
+  .menu-button {
+    color: var(--white);
+  }
+}

@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { NavbarComponent } from './modules/logistic/components/navbar/navbar.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  imports: [RouterOutlet, NavbarComponent],
+  template: `<app-navbar /> <router-outlet />`,
 })
-export class AppComponent {
-  title = 'desafio_front_transporte';
-}
+export class AppComponent {}
